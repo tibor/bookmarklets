@@ -1,0 +1,3 @@
+[
+"Facebook Debugger"=>"javascript:(function()%7Blet%20d%3Ddocument%3Blet%20l%3Dd.location%3Blet%20q%3Dd.querySelector(%22link%20%5Brel%3Dcanonical%5D%22)%3Bif%20(!q)%7Bq%3Dl.origin%20%2B%20l.pathname%3B%7D%3Bwindow.open(%22https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Fsharing%2F%3Fq%3D%22%2BencodeURI(q))%7D)()"
+]
