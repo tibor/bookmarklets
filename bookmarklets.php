@@ -41,6 +41,13 @@ let e=\"https://\"+t.host.split(\".\").join(\"-\")+\".cdn.ampproject.org/c/s/\"+
 //open AMP cache in new tab and thus empty cache
 window.open(e)
 "
+	],
+	"Share Quote"=>[
+		"bookmarklet"=>"javascript:(function()%7Blet%20w%3Dwindow%3Bw.open(%22https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3D%22%2BencodeURI(w.location)%2B%22%26quote%3D%22%2Bw.getSelection().toString())%7D)()",
+		"title"=>"Share Quote",
+		"desc"=>"Lets you share selected text on a website as a link quote to facebook",
+		"code"=>"let w=window;
+w.open("https://www.facebook.com/sharer/sharer.php?u="+encodeURI(w.location)+"&quote="+w.getSelection().toString())"
 	]
 ];
 
