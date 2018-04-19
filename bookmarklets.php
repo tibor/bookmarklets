@@ -48,6 +48,15 @@ window.open(e)
 		"desc"=>"Lets you share selected text on a website as a link quote to facebook",
 		"code"=>"let w=window;
 w.open("https://www.facebook.com/sharer/sharer.php?u="+encodeURI(w.location)+"&quote="+w.getSelection().toString())"
+	],
+	"WWW/AMP"=>[
+		"bookmarklet"=>"javascript:(function()%7Blet%20l%3Dlocation%3Blet%20d%3Ddocument%3Blet%20c%3Dd.querySelector(%22link%5Brel%3Dcanonical%5D%22).href%3Bc%3D%3Dl%20%3F%20l.href%3Dd.querySelector(%22link%5Brel%3Damphtml%5D%22).href%20%3A%20l.href%3Dc%7D)()",
+		"title"=>"WWW/AMP",
+		"desc"=>"Lets you switch between WWW and AMP view",
+		"code"=>"let l=location;
+let d=document;
+let c=d.querySelector("link[rel=canonical]").href;
+c==l ? l.href=d.querySelector("link[rel=amphtml]").href : l.href=c"
 	]
 ];
 
