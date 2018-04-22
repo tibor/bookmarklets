@@ -57,6 +57,13 @@ w.open(\"https://www.facebook.com/sharer/sharer.php?u=\"+encodeURI(w.location)+\
 let d=document;
 let c=d.querySelector(\"link[rel=canonical]\").href;
 c==l ? l.href=d.querySelector(\"link[rel=amphtml]\").href : l.href=c"
+	],
+	[
+		"bookmarklet"=>"javascript:(function()%7Blet%20i%3D%20location.href.split(%22-%22).slice(-1)%5B0%5D%3Bwindow.open(%22https%3A%2F%2Fi.giphy.com%2F%22%2Bi%2B%22.gif%22)%7D)()",
+		"title"=>"Get GIF",
+		"desc"=>"",
+		"code"=>"let i= location.href.split("-").slice(-1)[0];
+window.open("https://i.giphy.com/"+i+".gif");"
 	]
 ];
 
