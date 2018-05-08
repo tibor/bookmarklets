@@ -62,7 +62,9 @@ c==l ? l.href=d.querySelector(\"link[rel=amphtml]\").href : l.href=c"
 		"bookmarklet"=>"javascript:(function()%7Blet%20i%3D%20location.href.split(%22-%22).slice(-1)%5B0%5D%3Bwindow.open(%22https%3A%2F%2Fi.giphy.com%2F%22%2Bi%2B%22.gif%22)%7D)()",
 		"title"=>"Get GIF",
 		"desc"=>"Lets you get the original .gif file from giphy instrad of a mp4",
-		"code"=>"let i= location.href.split("-").slice(-1)[0];
+		"code"=>"let i=document.querySelector("link [rel=canonical]").href;
+!i&&i=location.href;
+i.split("-").slice(-1)[0];
 window.open("https://i.giphy.com/"+i+".gif");"
 	]
 ];
