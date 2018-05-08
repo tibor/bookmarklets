@@ -64,8 +64,8 @@ c==l ? l.href=d.querySelector(\"link[rel=amphtml]\").href : l.href=c"
 		"desc"=>"Lets you get the original .gif file from giphy instrad of a mp4",
 		"code"=>"let i=document.querySelector(\"link [rel=canonical]\").getAttribute(\"href\");
 !i&&i=location.href;
-i.split("-").slice(-1)[0];
-window.open("https://i.giphy.com/"+i+".gif");"
+i.split(\"-\").slice(-1)[0];
+window.open(\"https://i.giphy.com/\"+i+\".gif\");"
 	]
 ];
 
